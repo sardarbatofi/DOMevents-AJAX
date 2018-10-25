@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-	<head>
-		<meta charset="utf-8">
-		<title>Quiz</title>
-		<link href="mystylesheet.css" rel="stylesheet" type="text/css"/>
-		<script src="myscript.js"></script>
+<html lang="en" >
+
+<head>
+  <title>Trivia Quiz</title>
+    <meta charset="UTF-8">
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker"> 
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="mystylesheet.css">
+    <script  src="myscript.js"></script> 
+</head>
+
+<body>
+
+	<h1 class="title">Quiz</h1>
+    <div id="container">
+  
+    <!--header of container with the stats number correct and correct in row-->
+	  <div class="statistics-container">
+    	<div id="quizCorrect">
+      		
+
+      		<div class="correct">
+       		 	<p>Number correct</p>
+        		<span id="correctOfNumbers-span" class="animated">0/0</span>
+      		</div>
+
+     	 	<div class="correct">
+        		<p>Correct in row</p>
+       			<span id="correctRow-span" class="animated">0</span>
+      	 	</div> 
+     
+     	 
+    
+   		 </div>    
+  
+    </div>  
 
 
-		
-	</head>
 
-		<body>
-		<div id="container">
+  <div class="question-container">
+    <div class="row">
+      <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+        <p id="questionText" class="animated"></p>
+        <div id="alternativAnswers">
 
-	
-					
-		<!--<button href="#" id="check" onclick="checkAnswer(question)">Check Answer</button>
-		<button href="#" id="next" onclick="nextFunction()">Next</button>-->
-		</div>	
-
-		
-
+        </div>
+      
+      </div>
+    </div>
+  </div>
 
 
-		</body>	
-</html>	
+
+</div>
+  
+  
+
+   
+
+
+
+
+</body>
+
+</html>
